@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1830px;
+  margin: 16px auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding-right: 8px;
+}

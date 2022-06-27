@@ -1,0 +1,105 @@
+  .item {
+    flex-grow: 1.5;
+    flex-shrink: 1;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    flex-basis: 337.5px;
+    max-width: 510px;
+  }
+  .photoCard {
+    height: 0;
+    position: relative;
+    overflow: hidden;
+    padding-top:66.667%;
+  }
+  .photoCardInner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .photoContainer {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .stats {
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent);
+    transition: all 0.25s;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    opacity: 0;
+  }
+  .stats p {
+    color: #fff;
+    text-decoration: none;
+    padding: 2px 4px;
+    border-radius: 2px;
+  }
+  .stats p:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 100%, 0.2);
+  }
+  
+  .photoContainer:hover .stats {
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  .statsContainer {
+    flex: initial;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .statsContainer {
+      display: none;
+    }
+  }
+  
+  .statsContainer a:hover {
+    color: #fff;
+  }
+  
+  .countLabel {
+    margin-left: 4px;
+    white-space: nowrap;
+  }
+  
+  .photoContainer img {
+    /* max-width: 100%;
+    max-height: 100%; */
+    max-width: 6000px; 
+    max-height: 4000px;
+    width: 100%;
+  }
+  
+  .statsContainer p {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 4px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .statsContainer p > :nth-child(n + 2) {
+    margin-left: 4px;
+  }
+  
+  .keywordsContainer {
+    flex: auto;
+  }
+  

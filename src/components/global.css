@@ -1,0 +1,22 @@
+html {
+  cursor: default;
+  line-height: 1.5;
+  tab-size: 4;
+  word-break: break-word;
+}
+
+body {
+  color: #191b26;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  font-family: Open Sans, Arial, system-ui;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
